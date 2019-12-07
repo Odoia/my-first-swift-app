@@ -25,12 +25,16 @@ class AddUserUiTests: XCTestCase {
     
     func testAddUserLabel(){
         XCTAssertEqual(addUserScreen?.title.label, "ADD USER")
-        XCTAssertTrue(addUserScreen?.nameInput.exists ?? false)
-        XCTAssertTrue(addUserScreen?.emailInput.exists ?? false)
-        XCTAssertTrue(addUserScreen?.nicknameInput.exists ?? false)
-        XCTAssertTrue(addUserScreen?.birthdayInput.exists ?? false)
-        XCTAssertTrue(addUserScreen?.phoneInput.exists ?? false)
-        XCTAssertTrue(addUserScreen?.buttonAdd.exists ?? false)
+        self.checkInput(input: addUserScreen?.nameInput, placeholder: "ADD NAME")
+        self.checkInput(input: addUserScreen?.emailInput, placeholder: "ADD EMAIL")
+        self.checkInput(input: addUserScreen?.nicknameInput, placeholder: "ADD NICKNAME")
+        self.checkInput(input: addUserScreen?.birthdayInput, placeholder: "ADD BIRTHDAY")
+        self.checkInput(input: addUserScreen?.phoneInput, placeholder: "ADD PHONE")
+        XCTAssertEqual(addUserScreen?.buttonAdd.label, "ADD USER")
     }
     
+    private func checkInput(input: XCUIElement?, placeholder: String){
+        XCTAssertTrue(input?.exists ?? false)
+        XCTAssertEqual(input?.placeholderValue, placeholder)
+    }
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -14,61 +14,98 @@
                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ADD USER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjD-LT-Mo3">
-                        <rect key="frame" x="20" y="137" width="374" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <accessibility key="accessibilityConfiguration" identifier="title_add_user"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ePD-5m-yR7">
-                        <rect key="frame" x="67" y="229" width="97" height="34"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <accessibility key="accessibilityConfiguration" identifier="name_add_user"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits"/>
-                    </textField>
-                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y9C-tT-hiQ">
-                        <rect key="frame" x="67" y="294" width="97" height="34"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <accessibility key="accessibilityConfiguration" identifier="email_add_user"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits"/>
-                    </textField>
-                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dGs-B1-duI">
-                        <rect key="frame" x="67" y="365" width="97" height="34"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <accessibility key="accessibilityConfiguration" identifier="nickname_add_user"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits"/>
-                    </textField>
-                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G1h-3m-vex">
-                        <rect key="frame" x="67" y="431" width="97" height="34"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <accessibility key="accessibilityConfiguration" identifier="birthday_add_user"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits"/>
-                    </textField>
-                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="STq-8C-uWj">
-                        <rect key="frame" x="67" y="501" width="97" height="34"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <accessibility key="accessibilityConfiguration" identifier="phone_add_user"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits"/>
-                    </textField>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Xt-to-Vna">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Xt-to-Vna">
                         <rect key="frame" x="104" y="825" width="187" height="30"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <accessibility key="accessibilityConfiguration" identifier="button_add_user"/>
-                        <state key="normal" title="Button">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="GLJ-Ik-03R"/>
+                        </constraints>
+                        <state key="normal" title="ADD USER">
                             <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <color key="titleShadowColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </state>
                     </button>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ADD NAME" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ePD-5m-yR7">
+                        <rect key="frame" x="59" y="127" width="296" height="34"/>
+                        <accessibility key="accessibilityConfiguration" identifier="name_add_user"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="ZZa-WD-1ow"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ADD EMAIL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y9C-tT-hiQ">
+                        <rect key="frame" x="59" y="194" width="296" height="34"/>
+                        <accessibility key="accessibilityConfiguration" identifier="email_add_user"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="QpA-qI-Lqy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ADD NICKNAME" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dGs-B1-duI">
+                        <rect key="frame" x="59" y="257" width="296" height="34"/>
+                        <accessibility key="accessibilityConfiguration" identifier="nickname_add_user"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="igi-kn-Zrb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ADD BIRTHDAY" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G1h-3m-vex">
+                        <rect key="frame" x="59" y="319" width="296" height="34"/>
+                        <accessibility key="accessibilityConfiguration" identifier="birthday_add_user"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="3yr-Qb-VA4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADD USER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjD-LT-Mo3">
+                        <rect key="frame" x="20" y="67" width="374" height="21"/>
+                        <accessibility key="accessibilityConfiguration" identifier="title_add_user"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="xBq-Um-B2j"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ADD PHONE" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="STq-8C-uWj">
+                        <rect key="frame" x="59" y="378" width="296" height="34"/>
+                        <accessibility key="accessibilityConfiguration" identifier="phone_add_user"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="lXr-y9-O87"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
                 </subviews>
                 <color key="backgroundColor" red="0.59726317797668382" green="0.67629079253242819" blue="0.7693973183631897" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                <constraints>
+                    <constraint firstItem="6Xt-to-Vna" firstAttribute="leading" secondItem="KBP-Mw-1Ma" secondAttribute="leading" constant="104" id="13o-Eu-QGu"/>
+                    <constraint firstItem="KBP-Mw-1Ma" firstAttribute="trailing" secondItem="6Xt-to-Vna" secondAttribute="trailing" constant="123" id="58k-gF-K4G"/>
+                    <constraint firstItem="ePD-5m-yR7" firstAttribute="leading" secondItem="KBP-Mw-1Ma" secondAttribute="leading" constant="59" id="5KO-DT-5KK"/>
+                    <constraint firstItem="fjD-LT-Mo3" firstAttribute="leading" secondItem="KBP-Mw-1Ma" secondAttribute="leading" constant="20" id="5n4-78-aAE"/>
+                    <constraint firstItem="STq-8C-uWj" firstAttribute="top" secondItem="G1h-3m-vex" secondAttribute="bottom" constant="25" id="Hhr-my-dHM"/>
+                    <constraint firstItem="dGs-B1-duI" firstAttribute="leading" secondItem="KBP-Mw-1Ma" secondAttribute="leading" constant="59" id="JhU-5E-Hb9"/>
+                    <constraint firstItem="dGs-B1-duI" firstAttribute="top" secondItem="y9C-tT-hiQ" secondAttribute="bottom" constant="29" id="MyS-5b-d1y"/>
+                    <constraint firstItem="y9C-tT-hiQ" firstAttribute="top" secondItem="ePD-5m-yR7" secondAttribute="bottom" constant="33" id="Qor-Ha-7jT"/>
+                    <constraint firstItem="fjD-LT-Mo3" firstAttribute="top" secondItem="KBP-Mw-1Ma" secondAttribute="top" constant="23" id="Ucr-sb-RPf"/>
+                    <constraint firstItem="KBP-Mw-1Ma" firstAttribute="trailing" secondItem="fjD-LT-Mo3" secondAttribute="trailing" constant="20" id="ZzR-hd-xb2"/>
+                    <constraint firstItem="G1h-3m-vex" firstAttribute="leading" secondItem="KBP-Mw-1Ma" secondAttribute="leading" constant="59" id="agB-yQ-BZP"/>
+                    <constraint firstItem="STq-8C-uWj" firstAttribute="leading" secondItem="KBP-Mw-1Ma" secondAttribute="leading" constant="59" id="e8G-kh-ev9"/>
+                    <constraint firstItem="KBP-Mw-1Ma" firstAttribute="trailing" secondItem="ePD-5m-yR7" secondAttribute="trailing" constant="59" id="ffX-PJ-EOp"/>
+                    <constraint firstItem="y9C-tT-hiQ" firstAttribute="leading" secondItem="KBP-Mw-1Ma" secondAttribute="leading" constant="59" id="isc-yS-cFu"/>
+                    <constraint firstItem="KBP-Mw-1Ma" firstAttribute="trailing" secondItem="STq-8C-uWj" secondAttribute="trailing" constant="59" id="kTz-Qm-JYh"/>
+                    <constraint firstItem="KBP-Mw-1Ma" firstAttribute="trailing" secondItem="G1h-3m-vex" secondAttribute="trailing" constant="59" id="l1T-2c-J0W"/>
+                    <constraint firstItem="KBP-Mw-1Ma" firstAttribute="trailing" secondItem="dGs-B1-duI" secondAttribute="trailing" constant="59" id="m6G-Rr-VgL"/>
+                    <constraint firstItem="KBP-Mw-1Ma" firstAttribute="trailing" secondItem="y9C-tT-hiQ" secondAttribute="trailing" constant="59" id="nx3-j6-Vfc"/>
+                    <constraint firstItem="KBP-Mw-1Ma" firstAttribute="bottom" secondItem="6Xt-to-Vna" secondAttribute="bottom" constant="7" id="rRV-Z3-lWr"/>
+                    <constraint firstItem="ePD-5m-yR7" firstAttribute="top" secondItem="fjD-LT-Mo3" secondAttribute="bottom" constant="39" id="vwd-od-JV6"/>
+                    <constraint firstItem="G1h-3m-vex" firstAttribute="top" secondItem="dGs-B1-duI" secondAttribute="bottom" constant="28" id="xYk-Au-zar"/>
+                </constraints>
                 <viewLayoutGuide key="safeArea" id="KBP-Mw-1Ma"/>
             </view>
             <point key="canvasLocation" x="-7.2463768115942031" y="30.803571428571427"/>
