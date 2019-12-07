@@ -10,12 +10,12 @@
 		1912CB18239C41920056890C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1912CB17239C41920056890C /* AppDelegate.swift */; };
 		1912CB1A239C41920056890C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1912CB19239C41920056890C /* SceneDelegate.swift */; };
 		1912CB21239C41930056890C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1912CB20239C41930056890C /* Assets.xcassets */; };
-		1912CB24239C41930056890C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1912CB22239C41930056890C /* LaunchScreen.storyboard */; };
 		1912CB2F239C41930056890C /* my_first_swift_projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1912CB2E239C41930056890C /* my_first_swift_projectTests.swift */; };
-		1912CB3A239C41930056890C /* my_first_swift_projectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1912CB39239C41930056890C /* my_first_swift_projectUITests.swift */; };
 		1912CB48239C44600056890C /* AddUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1912CB47239C44600056890C /* AddUserViewController.xib */; };
 		1912CB4A239C44CE0056890C /* AddUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1912CB49239C44CE0056890C /* AddUserViewController.swift */; };
 		1912CB4E239C4DDD0056890C /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1912CB4D239C4DDD0056890C /* ViewUtils.swift */; };
+		1912CB55239C59E10056890C /* AddUserUiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1912CB54239C59E10056890C /* AddUserUiTests.swift */; };
+		1912CB5A239C5E9A0056890C /* AddUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1912CB59239C5E9A0056890C /* AddUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,17 +40,18 @@
 		1912CB17239C41920056890C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1912CB19239C41920056890C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1912CB20239C41930056890C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1912CB23239C41930056890C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1912CB25239C41930056890C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1912CB2A239C41930056890C /* my_first_swift_projectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = my_first_swift_projectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1912CB2E239C41930056890C /* my_first_swift_projectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = my_first_swift_projectTests.swift; sourceTree = "<group>"; };
 		1912CB30239C41930056890C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1912CB35239C41930056890C /* my_first_swift_projectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = my_first_swift_projectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1912CB39239C41930056890C /* my_first_swift_projectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = my_first_swift_projectUITests.swift; sourceTree = "<group>"; };
 		1912CB3B239C41930056890C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1912CB47239C44600056890C /* AddUserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddUserViewController.xib; sourceTree = "<group>"; };
 		1912CB49239C44CE0056890C /* AddUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserViewController.swift; sourceTree = "<group>"; };
 		1912CB4D239C4DDD0056890C /* ViewUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
+		1912CB53239C59E10056890C /* my_first_swift_projectUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "my_first_swift_projectUITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		1912CB54239C59E10056890C /* AddUserUiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserUiTests.swift; sourceTree = "<group>"; };
+		1912CB59239C5E9A0056890C /* AddUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,8 +120,10 @@
 		1912CB38239C41930056890C /* my_first_swift_projectUITests */ = {
 			isa = PBXGroup;
 			children = (
-				1912CB39239C41930056890C /* my_first_swift_projectUITests.swift */,
 				1912CB3B239C41930056890C /* Info.plist */,
+				1912CB56239C5E540056890C /* ui_tests */,
+				1912CB53239C59E10056890C /* my_first_swift_projectUITests-Bridging-Header.h */,
+				1912CB58239C5E850056890C /* pages */,
 			);
 			path = my_first_swift_projectUITests;
 			sourceTree = "<group>";
@@ -158,9 +161,24 @@
 				1912CB17239C41920056890C /* AppDelegate.swift */,
 				1912CB19239C41920056890C /* SceneDelegate.swift */,
 				1912CB20239C41930056890C /* Assets.xcassets */,
-				1912CB22239C41930056890C /* LaunchScreen.storyboard */,
 			);
 			path = common;
+			sourceTree = "<group>";
+		};
+		1912CB56239C5E540056890C /* ui_tests */ = {
+			isa = PBXGroup;
+			children = (
+				1912CB54239C59E10056890C /* AddUserUiTests.swift */,
+			);
+			path = ui_tests;
+			sourceTree = "<group>";
+		};
+		1912CB58239C5E850056890C /* pages */ = {
+			isa = PBXGroup;
+			children = (
+				1912CB59239C5E9A0056890C /* AddUser.swift */,
+			);
+			path = pages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +256,7 @@
 					};
 					1912CB34239C41930056890C = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 						TestTargetID = 1912CB13239C41920056890C;
 					};
 				};
@@ -267,7 +286,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1912CB24239C41930056890C /* LaunchScreen.storyboard in Resources */,
 				1912CB21239C41930056890C /* Assets.xcassets in Resources */,
 				1912CB48239C44600056890C /* AddUserViewController.xib in Resources */,
 			);
@@ -313,7 +331,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1912CB3A239C41930056890C /* my_first_swift_projectUITests.swift in Sources */,
+				1912CB5A239C5E9A0056890C /* AddUser.swift in Sources */,
+				1912CB55239C59E10056890C /* AddUserUiTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,17 +350,6 @@
 			targetProxy = 1912CB36239C41930056890C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		1912CB22239C41930056890C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1912CB23239C41930056890C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1912CB3C239C41930056890C /* Debug */ = {
@@ -542,6 +550,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33R5T7W4ZR;
 				INFOPLIST_FILE = my_first_swift_projectUITests/Info.plist;
@@ -552,6 +561,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.skytech.my-first-swift-projectUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "my_first_swift_projectUITests/my_first_swift_projectUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = my_first_swift_project;
@@ -562,6 +573,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33R5T7W4ZR;
 				INFOPLIST_FILE = my_first_swift_projectUITests/Info.plist;
@@ -572,6 +584,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.skytech.my-first-swift-projectUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "my_first_swift_projectUITests/my_first_swift_projectUITests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = my_first_swift_project;
