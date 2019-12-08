@@ -1,5 +1,5 @@
 //
-//  AddUserViewController.swift
+//  UserDetailViewController.swift
 //  my_first_swift_project
 //
 //  Created by Tiago Jácome Henrique do Carmo on 07/12/19.
@@ -8,8 +8,8 @@
 
 import UIKit
 
-class AddUserViewController: UIViewController {
-    public static let NIB_NAME = "AddUserViewController"
+class UserDetailViewController: UIViewController {
+    public static let NIB_NAME = "UserDetailViewController"
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -17,12 +17,8 @@ class AddUserViewController: UIViewController {
         self.view.addGestureRecognizer(tap)
     }
     
-    @IBAction func submit(_ sender: Any) {
-        let userDetail: UserDetailViewController = ViewUtils.loadNibNamed(UserDetailViewController.NIB_NAME, owner: self)
-        self.present(userDetail, animated: true, completion: nil)
-    }
-    
     @objc func dismissKeyBoard(){
         self.view.endEditing(true)
     }
 }
+
