@@ -111,6 +111,13 @@
                 </constraints>
                 <viewLayoutGuide key="safeArea" id="KBP-Mw-1Ma"/>
             </view>
+            <connections>
+                <outlet property="birthdayTextField" destination="G1h-3m-vex" id="XFd-HT-FNi"/>
+                <outlet property="emailTextField" destination="y9C-tT-hiQ" id="LNp-Hc-5Ra"/>
+                <outlet property="nameTextField" destination="ePD-5m-yR7" id="UQY-pX-Ssx"/>
+                <outlet property="nicknameTextField" destination="dGs-B1-duI" id="zK0-TY-ERd"/>
+                <outlet property="phoneTextField" destination="STq-8C-uWj" id="AxL-E3-YUa"/>
+            </connections>
             <point key="canvasLocation" x="-7.2463768115942031" y="30.803571428571427"/>
         </viewController>
     </objects>

@@ -31,7 +31,12 @@ class AddUserUiTests: XCTestCase {
         self.fillAllInputs()
         XCTAssertEqual(addUserScreen?.buttonAdd.label, "ADD USER")
         addUserScreen?.buttonAdd.tap()
-        XCTAssertTrue(userDetailScreen?.labelDetail.exists ?? false)
+        
+        XCTAssertEqual(userDetailScreen?.labelNameDetail.label, "Name Test")
+        XCTAssertEqual(userDetailScreen?.labelEmailDetail.label, "test@email.com")
+        XCTAssertEqual(userDetailScreen?.labelNicknameDetail.label, "Nickname Test")
+        XCTAssertEqual(userDetailScreen?.labelBirthdayDetail.label, "Birthday Test")
+        XCTAssertEqual(userDetailScreen?.labelPhoneDetail.label, "Phone Test")
     }
     
     private func checkInput(input: XCUIElement?, placeholder: String){

@@ -10,7 +10,15 @@ import UIKit
 
 class UserDetailViewController: UIViewController {
     public static let NIB_NAME = "UserDetailViewController"
+   
+    @IBOutlet weak var nameUser: UILabel!
+    @IBOutlet weak var emailUser: UILabel!
+    @IBOutlet weak var nicknameUser: UILabel!
+    @IBOutlet weak var phoneUser: UILabel!
+    @IBOutlet weak var birthdayUser: UILabel!
     
+    var userInformation = String()
+ 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyBoard))

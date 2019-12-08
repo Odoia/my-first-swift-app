@@ -14,5 +14,9 @@ class UserDetail{
         self.app = app
     }
     
-    var labelDetail: XCUIElement{ return app.staticTexts["label_user_detail"] }
+    var labelNameDetail: XCUIElement{ return app.staticTexts["label_name_user_detail"] }
+    var labelEmailDetail: XCUIElement{ return app.staticTexts["label_email_user_detail"] }
+    var labelNicknameDetail: XCUIElement{ return app.staticTexts["label_nickname_user_detail"] }
+    var labelBirthdayDetail: XCUIElement{ return app.staticTexts["label_birthday_user_detail"] }
+    var labelPhoneDetail: XCUIElement{ return app.staticTexts["label_phone_user_detail"] }
 }

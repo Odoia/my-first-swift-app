@@ -10,6 +10,11 @@ import UIKit
 
 class AddUserViewController: UIViewController {
     public static let NIB_NAME = "AddUserViewController"
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var nicknameTextField: UITextField!
+    @IBOutlet weak var birthdayTextField: UITextField!
+    @IBOutlet weak var phoneTextField: UITextField!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -19,6 +24,11 @@ class AddUserViewController: UIViewController {
     
     @IBAction func submit(_ sender: Any) {
         let userDetail: UserDetailViewController = ViewUtils.loadNibNamed(UserDetailViewController.NIB_NAME, owner: self)
+        userDetail.nameUser.text = nameTextField.text ?? "ERROR"
+        userDetail.emailUser.text = emailTextField.text ?? "ERROR"
+        userDetail.nicknameUser.text = nicknameTextField.text ?? "ERROR"
+        userDetail.birthdayUser.text = birthdayTextField.text ?? "ERROR"
+        userDetail.phoneUser.text = phoneTextField.text ?? "ERROR"
         self.present(userDetail, animated: true, completion: nil)
     }
     

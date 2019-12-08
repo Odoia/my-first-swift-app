@@ -15,9 +15,41 @@
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mye-S2-LzU">
-                        <rect key="frame" x="57" y="90" width="301" height="21"/>
+                        <rect key="frame" x="57" y="93" width="301" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <accessibility key="accessibilityConfiguration" identifier="label_user_detail"/>
+                        <accessibility key="accessibilityConfiguration" identifier="label_name_user_detail"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SlN-cG-TR1">
+                        <rect key="frame" x="57" y="185" width="301" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <accessibility key="accessibilityConfiguration" identifier="label_nickname_user_detail"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p7O-6d-0ol">
+                        <rect key="frame" x="57" y="229" width="301" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <accessibility key="accessibilityConfiguration" identifier="label_phone_user_detail"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTn-k0-Bne">
+                        <rect key="frame" x="57" y="270" width="301" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <accessibility key="accessibilityConfiguration" identifier="label_birthday_user_detail"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSo-eH-OdM">
+                        <rect key="frame" x="57" y="136" width="301" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <accessibility key="accessibilityConfiguration" identifier="label_email_user_detail"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -26,6 +58,13 @@
                 <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <viewLayoutGuide key="safeArea" id="jm2-gQ-Fk7"/>
             </view>
+            <connections>
+                <outlet property="birthdayUser" destination="NTn-k0-Bne" id="uId-pD-WrB"/>
+                <outlet property="emailUser" destination="VSo-eH-OdM" id="nUL-Ma-FaS"/>
+                <outlet property="nameUser" destination="Mye-S2-LzU" id="cNb-W5-lVm"/>
+                <outlet property="nicknameUser" destination="SlN-cG-TR1" id="fCb-hx-ZEF"/>
+                <outlet property="phoneUser" destination="p7O-6d-0ol" id="phm-us-czb"/>
+            </connections>
             <point key="canvasLocation" x="121.73913043478262" y="152.67857142857142"/>
         </viewController>
     </objects>
